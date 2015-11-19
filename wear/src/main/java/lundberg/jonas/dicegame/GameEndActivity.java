@@ -19,6 +19,7 @@ public class GameEndActivity extends Activity {
         // Create the text view
         TextView textView = (TextView) findViewById(R.id.gameState);
         textView.setText(message);
+
     }
 
     /**
