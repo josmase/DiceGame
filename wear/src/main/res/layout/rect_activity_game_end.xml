@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:orientation="vertical"
-    tools:context="lundberg.jonas.dicegame.GameEndActivity" tools:deviceIds="wear_square">
+    tools:context="lundberg.jonas.dicegame.GameEndActivity" tools:deviceIds="wear_square"
+    android:id="@+id/gameState">
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,12 +15,11 @@
         android:layout_marginTop="20dp" />
 
     <Button
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/playAgain"
-        android:id="@+id/button6"
+        android:text="New Button"
+        android:id="@+id/button5"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp"
-        android:onClick="startGame" />
+        android:layout_marginTop="40dp" />
+
 </LinearLayout>

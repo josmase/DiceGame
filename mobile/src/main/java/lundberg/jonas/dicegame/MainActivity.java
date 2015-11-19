@@ -17,4 +17,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, StartGameActivity.class);
         startActivity(intent);
     }
+    /** Called when the user clicks the Highcsore button and opens a new activity of Highscore  */
+    public void highscore(View view) {
+        Intent intent = new Intent(this, HighscoreActivity.class);
+        startActivity(intent);
+    }
+
 }

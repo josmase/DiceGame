@@ -21,8 +21,10 @@ public class GameEndActivity extends AppCompatActivity {
         textView.setText(message);
 
     }
+
     /**
      * takes the user to the start screen                          (1)
+     * @param view necessary for creating a new view
      */
     public void startScreen(View view) {
         Intent intent = new Intent(this, MainActivity.class);
@@ -32,6 +34,7 @@ public class GameEndActivity extends AppCompatActivity {
     }
     /**
      * takes the user to a new game of 21                         (1)
+     * @param view necessary for creating a new view
      */
     public void startGame(View view) {
         Intent intent = new Intent(this, StartGameActivity.class);
