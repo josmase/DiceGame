@@ -3,7 +3,7 @@ import java.util.Random;
 
 /**
  * Created by knugen on 11/10/15.
- * Round controlls the actions that can be made
+ * Round controls the actions that can be made
  * to change the current score of the round
  */
 public class Round {
@@ -16,7 +16,7 @@ public class Round {
     /**
      * Random number generator
      */
-    private Random dice = new Random();
+    private final Random dice = new Random();
 
     /**
      * throws the dice and plays one round                           (1)

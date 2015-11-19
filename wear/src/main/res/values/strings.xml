@@ -4,7 +4,6 @@
     <string name="start_game">Start</string>
     <string name="title_activity_start_game">Spelar</string>
     <string name="diceRoll">Roll dice</string>
-    <string name="exit">Exit</string>
     <string name="gameState"> </string>
     <string name="won">You won!</string>
     <string name="lost">You lost!</string>

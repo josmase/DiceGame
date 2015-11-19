@@ -9,7 +9,7 @@ import android.widget.TextView;
 public class StartGameActivity extends AppCompatActivity {
     /**Message to send to new activity */
     public final static String EXTRA_MESSAGE = "jonas.lundberg.dicegame.MESSAGE";
-    static final String STATE_SCORE = "playerScore";
+    private static final String STATE_SCORE = "playerScore";
     private Round round1;
 
     @Override
@@ -45,7 +45,6 @@ public class StartGameActivity extends AppCompatActivity {
      * <p>
      * When the user press the play button startGame checks                     [2]
      * if it should continue or not
-     * @param view I don't know
      */
     public void startGame(View view) {
 
@@ -76,7 +75,7 @@ public class StartGameActivity extends AppCompatActivity {
      */
     private void updateTextViewScore() {
         TextView tv = (TextView) findViewById(R.id.currentScore);
-        tv.setText(String.format(round1.getScore()));
+        tv.setText(Integer.toString(round1.getScore()));
     }
 
     /**
@@ -93,7 +92,6 @@ public class StartGameActivity extends AppCompatActivity {
     }
     /**
      * takes the user to the start screen                          (1)
-     * @param view necessary for creating a new view
      */
     public void startScreen(View view) {
         Intent intent = new Intent(this, MainActivity.class);

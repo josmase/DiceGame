@@ -11,7 +11,6 @@ public class StartGameActivity extends Activity {
 
     /**Message to send to new activity */
     public final static String EXTRA_MESSAGE = "jonas.lundberg.dicegame.MESSAGE";
-    static final String STATE_SCORE = "playerScore";
     private Round round1;
 
 
@@ -39,7 +38,6 @@ public class StartGameActivity extends Activity {
      * <p>
      * When the user press the play button startGame checks                     [2]
      * if it should continue or not
-     * @param view I don't know
      */
     public void startGame(View view) {
 

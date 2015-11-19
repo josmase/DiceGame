@@ -3,12 +3,10 @@
     <string name="app_name">Dice Game</string>
     <string name="displayScore">0</string>
     <string name="diceRoll">Slå tärning</string>
-    <string name="exit">Avsluta</string>
     <string name="lost">Du förlorade</string>
     <string name="playAgain">Spela igen</string>
     <string name="start_game">Starta</string>
     <string name="title_activity_start_game">Spelar</string>
     <string name="won">Du vann</string>
-    <string name="highscore">Rekord</string>
     <string name="title_activity_game_end">Resultat</string>
 </resources>

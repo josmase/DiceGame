@@ -23,7 +23,6 @@ public class GameEndActivity extends Activity {
 
     /**
      * takes the user to a new game of 21                         (1)
-     * @param view necessary for creating a new view
      */
     public void startGame(View view) {
         Intent intent = new Intent(this, StartGameActivity.class);

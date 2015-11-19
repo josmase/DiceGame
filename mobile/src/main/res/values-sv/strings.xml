@@ -10,4 +10,9 @@
     <string name="title_activity_start_game">Spelar</string>
     <string name="won">Du vann</string>
     <string name="displayScore">0</string>
+    <string name="highscore">Rekord</string>
+    <string name="highscorelist">Rekord: \n</string>
+    <string name="rules">När du får 21 vinner du och får du över 21 förlorar du</string>
+    <string name="startScreen">Återvänd till start</string>
+    <string name="altText21">21</string>
 </resources>
