@@ -11,6 +11,7 @@ public class StartGameActivity extends AppCompatActivity {
     public final static String EXTRA_MESSAGE = "jonas.lundberg.dicegame.MESSAGE";
     private static final String STATE_SCORE = "playerScore";
     private Round round1;
+    private DatabaseHelper db;
 
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
@@ -38,6 +39,7 @@ public class StartGameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_game);
+        db = new DatabaseHelper(getApplicationContext());
         round1 = new Round();
     }
     /**
@@ -62,6 +64,7 @@ public class StartGameActivity extends AppCompatActivity {
 
             if (round1.getScore() == 21) {
                 gameStatus = getString(R.string.won);
+                db.addEntry(round1.getScore());
                 gameEnd(gameStatus);
             } else if (round1.getScore() > 21) {
                 gameStatus = getString(R.string.lost);

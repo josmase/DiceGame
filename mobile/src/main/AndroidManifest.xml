@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".GameEndActivity" >
         </activity>
+        <activity android:name=".HighscoreActivity" >
+        </activity>
     </application>
 
 </manifest>
