@@ -14,25 +14,30 @@ public class GameEndActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game_end);
+        setContentView(R.layout.round_activity_game_end);
+        /*
         final WatchViewStub stub = (WatchViewStub) findViewById(R.id.watch_view_stub);
+
         stub.setOnLayoutInflatedListener(new WatchViewStub.OnLayoutInflatedListener() {
             @Override
             public void onLayoutInflated(WatchViewStub stub) {
                 mTextView = (TextView) stub.findViewById(R.id.text);
             }
         });
+        */
         // Get the message from the intent
         Intent intent = getIntent();
         String message = intent.getStringExtra(StartGameActivity.EXTRA_MESSAGE);
+        updateTextViewScore(message);
 
-        // Create the text view
-        TextView textView = (TextView) findViewById(R.id.gameState);
-        textView.setText(message);
     }
     public void startGame(View view) {
         Intent intent = new Intent(this, StartGameActivity.class);
         startActivity(intent);
         finish();
+    }
+    private void updateTextViewScore(String message) {
+        TextView tv = (TextView) findViewById(R.id.gameState);
+        tv.setText(message);
     }
 }
